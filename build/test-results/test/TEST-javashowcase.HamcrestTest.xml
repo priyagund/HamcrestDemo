@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="javashowcase.HamcrestTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-26T13:21:54" hostname="admin142-desktop" time="0.007">
+<testsuite name="javashowcase.HamcrestTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-27T04:13:23" hostname="admin142-desktop" time="0.025">
   <properties/>
-  <testcase name="arraymatchersTest" classname="javashowcase.HamcrestTest" time="0.007"/>
+  <testcase name="objectMatchersTest" classname="javashowcase.HamcrestTest" time="0.025"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

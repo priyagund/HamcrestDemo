@@ -11,7 +11,6 @@ import java.util.List;
 
 public class HamcrestTest {
 
-
     @Test
     public void codeMatchersTest ()
     {
@@ -26,7 +25,6 @@ public class HamcrestTest {
         MatcherAssert.assertThat(list,Matchers.contains(5,2,4));
         MatcherAssert.assertThat(list,Matchers.containsInAnyOrder(2,4,5));
         MatcherAssert.assertThat(list, CoreMatchers.everyItem(Matchers.greaterThan(1)));
-
     }
 
     @Test
@@ -35,15 +33,14 @@ public class HamcrestTest {
         Integer[] ints=new Integer[] {7,5,12,16};
         MatcherAssert.assertThat(ints,Matchers.arrayWithSize(4));
         MatcherAssert.assertThat(ints,Matchers.arrayContaining(7,5,12,16));
-
     }
 
     @Test
     public void objectMatchersTest() {
-        Todo todo=new Todo(1,"Learn Harcrest","Important");
-        Todo todo2=new Todo(1,"Learn Harcrest","Important");
-        MatcherAssert.assertThat(todo,Matchers.hasProperty("summary"));
-        MatcherAssert.assertThat(todo,Matchers.hasProperty("summary",Matchers.equalTo("Learn Hamcrest")));
-        MatcherAssert.assertThat(todo,Matchers.samePropertyValuesAs(todo2));
+        TODO todo=new TODO(1,"Learn Harcrest","Important");
+        TODO todo2=new TODO(1,"Learn Harcrest","Important");
+        MatcherAssert.assertThat(todo, Matchers.hasProperty("summary"));
+        MatcherAssert.assertThat(todo, Matchers.hasProperty("summary", Matchers.equalTo("Learn Harcrest")));
+        MatcherAssert.assertThat(todo, Matchers.samePropertyValuesAs(todo2));
     }
 }
